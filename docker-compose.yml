@@ -9,7 +9,6 @@ services:
       - ./db_datadir:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: example
-      MYSQL_ROOT_HOST: '%'
 
   phpmyadmin:
     image: phpmyadmin:5.1.0-apache
@@ -31,6 +30,3 @@ services:
       - "db"
     volumes:
       - ./src:/var/www
-
-networks:         
-    random-name: 
