@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:8.0.24
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./db_datadir:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_HOST: '%'
+
+  phpmyadmin:
+    image: phpmyadmin:5.1.0-apache
+    restart: always
+    depends_on:
+      - "db"
+    ports:
+      - 8090:80
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: example
+
+  web:
+    build: .
+    ports:
+      - "8089:80"
+    depends_on:
+      - "db"
+    volumes:
+      - ./src:/var/www
+
+networks:         
+    random-name: 
