@@ -31,7 +31,10 @@ Public link
 
 
 # Ejercicio 1: Docker
-Instruccion: Desde directorio /enviame-test correr comando "docker-compose up"
+Instruccion general: 
+
+* Bajar el repositorio a una carpeta de su eleccion
+* Desde el directorio raiz de este repositorio, o donde esta el archivo docker-compose-yml correr comando de consola "docker-compose up"
 
 # Ejercicio 2: API REST + CRUD
 instruccion: Correr desde postman con los parametros mostrados
@@ -85,13 +88,13 @@ Crea un script en tu lenguaje favorito que obtenga el primer número de Fibonacc
 
 El script esta hecho en python, para correrlo se preparo un contenedor el cual se puede acceder en el directorio 
 
-`/enviame-test/src/ejercicio5py` 
+`/*raiz*/src/ejercicio5py` 
 
-Corriendo el comando: 
+Corriendo el comando en consola: 
 
 `docker build -t script_python .`
 
-Luego de que este montada la imagen correr el comando:
+Luego de que este montada la imagen correr el comando en consola:
 
 `docker run script_python`
 
@@ -108,7 +111,7 @@ Actualizar los sueldos de los empleados que ganen $5000 o menos, de acuerdo al r
 
 En el directorio siguiente esta el archivo 'sql-ejercicio7.sql' donde se encuentra el query que cumple con el requerimiento
 
-`enviame-test/src/mysql_files/sql-ejercicio7.sql`
+`*raiz*/src/mysql_files/sql-ejercicio7.sql`
 
 El Query en cuestion es
 
