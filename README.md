@@ -38,7 +38,7 @@ Json para consulta
 	"ceo":"Policarpo",
 	"fecha_creacion":"2012-06-02 02:12:30"
 }'`
-* 'DELETE - localhost:8089/api/delete.php' Borra una empresa
+* 'POST - localhost:8089/api/delete.php' Borra una empresa
 Json para consulta
 `'{
 	"id":"26"
@@ -70,7 +70,7 @@ Json para consulta
 
 # Ejercicio 6: Análisis + Desarrollo Aplicado a Negocio
 ## Desarrolla una función o procedimiento que estime el tiempo de entrega de la entrega de una compra online (en días)
-* 'GET - http://localhost:8089/scripts/ejercicio6.php' Crea 10 empresas con info falsa/aleatorea
+* 'GET - http://localhost:8089/scripts/ejercicio6.php' El script corre sin input, el output es la impresion de el rango de km de forma aleatorea y los dias que tomaria basandose en la instruccion del ejercicio.
 
 # Ejercicio 7: SQL
 ## Actualizar los sueldos de los empleados que ganen $5000 o menos, de acuerdo al reajuste anual del continente al que pertenecen.
@@ -84,3 +84,13 @@ SET
   em.salary = em.salary +(em.salary *(cn.anual_adjustment / 100))
 WHERE
   em.salary <= 5000`
+
+# Complemento de bases de datos
+## En el directorio siguiente se encuentran los archivos 
+
+* 'tabla-ejercicio2.sql'
+* 'tabla-ejercicio4.sql'
+* 'tabla-ejercicio7.sql' 
+
+## cada uno respectivamente tiene los querys para crear las tablas usadas para todo el test.
+
