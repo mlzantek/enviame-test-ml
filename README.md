@@ -87,7 +87,7 @@ El script esta hecho en python, para correrlo se preparo un contenedor el cual s
 `/enviame-test/src/ejercicio5py` 
 Corriendo el comando: 
 `docker build -t script_python .`
-Luego de que este montada la imagen correr el comandato:
+Luego de que este montada la imagen correr el comando:
 `docker run script_python`
 * Reflexion: debido a la complejidad de los calculos para numeros muy grandes se tomo en cuenta varios metodos como la criba de eratostenes(erathostenes sieve) y otros metodos, el que menos tiempo se demoro en mi equipo es el usado en el script el cual en la iteracion 92 encuentra el numero de la serie de fibonacci con la cantidad de divisores mayor a 1000, incluso es mayor a 2000
 
