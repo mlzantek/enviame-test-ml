@@ -76,15 +76,12 @@ Desarrolla una función o procedimiento que estime el tiempo de entrega de la en
 # Ejercicio 7: SQL
 Actualizar los sueldos de los empleados que ganen $5000 o menos, de acuerdo al reajuste anual del continente al que pertenecen.
 En el directorio siguiente esta el archivo 'sql-ejercicio7.sql' donde se encuentra el query que cumple con el requerimiento
+
 `enviame-test/src/mysql_files/sql-ejercicio7.sql`
+
 El Query en cuestion es
-`UPDATE 'employees' em
-  INNER JOIN 'countries' ct ON em.country_id = ct.id
-  INNER JOIN 'continents' cn ON cn.id = ct.continent_id
-SET
-  em.salary = em.salary +(em.salary *(cn.anual_adjustment / 100))
-WHERE
-  em.salary <= 5000`
+
+`UPDATE 'employees' em INNER JOIN 'countries' ct ON em.country_id = ct.id INNER JOIN 'continents' cn ON cn.id = ct.continent_id SET em.salary = em.salary +(em.salary *(cn.anual_adjustment / 100)) WHERE em.salary <= 5000`
 
 # Complemento de bases de datos
 En el directorio siguiente se encuentran los archivos 
