@@ -21,10 +21,8 @@ for ($i = 0; $i < $length - 1; $i++) {
 
 $cadenas = substr($cadenas, 0, -1);
 $cadenas = implode(',',array_unique(explode(',', $cadenas)));
-echo print_r(
-	array("Texto" => $texto,
+echo "<pre>",print_r(array("Texto" => $texto,
 				"Mensaje" => "La(s) cadena(s) de texto que es(son) igual al revés(palindromos) en el texto anterior son:",
-				"Cadenas" => $cadenas)
-);
+				"Cadenas" => $cadenas)),"</pre>";
 
 ?>
