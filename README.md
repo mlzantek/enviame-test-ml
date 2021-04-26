@@ -89,9 +89,7 @@ Corriendo el comando:
 `docker build -t script_python .`
 Luego de que este montada la imagen correr el comando:
 `docker run script_python`
-* Reflexion: debido a la complejidad de los calculos para numeros muy grandes se tomo en cuenta varios metodos como la criba de eratostenes(erathostenes sieve) y otros metodos, el que menos tiempo se demoro en mi equipo es el usado en el script el cual en la iteracion 92 encuentra el numero de la serie de fibonacci con la cantidad de divisores mayor a 1000, incluso es mayor a 2000
-
-* Notas: Si vale de algo como analisis y reflexion del problemma, logre un menor tiempo de ejecucion en C# usando este y otros metodos, para muestra va incluido en el en el directorio /enviame-test/src/ejercicio5py/ejercicio5Csharp la carpeta con el script, para correrlo no se preparo una imagen, pero si se tiene visual studio se puede correr abriendo el proyecto desde el programa.
+* Notas: calculo el numero n de la serie fibonacci usando  recursividad con tecnicas de optimizacion de memorizacion
 
 # Ejercicio 6: Análisis + Desarrollo Aplicado a Negocio
 Desarrolla una función o procedimiento que estime el tiempo de entrega de la entrega de una compra online (en días)
