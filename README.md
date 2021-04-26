@@ -23,9 +23,11 @@ Cada seccion de ejercicio tiene su instruccion
 
 ## Para facilidad de uso todas las consultas estan agregadas en la siguiente coleccion de postman
 
-[![Run in Postman - Workspace Colection](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/3052360-51ee2bd9-cd05-4019-ae90-287b2095af9a?action=collection%2Ffork&collection-url=entityId%3D3052360-51ee2bd9-cd05-4019-ae90-287b2095af9a%26entityType%3Dcollection%26workspaceId%3D3e0e5827-94d0-4fe8-8435-cce00606f1b9)
+Workspace Collection
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/3052360-51ee2bd9-cd05-4019-ae90-287b2095af9a?action=collection%2Ffork&collection-url=entityId%3D3052360-51ee2bd9-cd05-4019-ae90-287b2095af9a%26entityType%3Dcollection%26workspaceId%3D3e0e5827-94d0-4fe8-8435-cce00606f1b9)
 
-[![Run in Postman - Publick link](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/1d3d77dfaeffe7997c4b)
+Public link
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/1d3d77dfaeffe7997c4b)
 
 
 # Ejercicio 1: Docker
