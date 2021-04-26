@@ -84,11 +84,3 @@ SET
   em.salary = em.salary +(em.salary *(cn.anual_adjustment / 100))
 WHERE
   em.salary <= 5000`
-
-Ejercicio 1: Docker ya
-Ejercicio 2: API REST + CRUD probar con postman y documentar
-Ejercicio 3: Análisis + Desarrollo ya, documentar, limpiar y mejorar impresiones
-Ejercicio 4: Consumo API Envíame para la creación de un envío ya, documentar
-Ejercicio 5: Análisis + Desarrollo ya, documentar
-Ejercicio 6: Análisis + Desarrollo Aplicado a Negocio cruda
-Ejercicio 7: SQL ya, documentar
