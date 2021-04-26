@@ -23,7 +23,7 @@ Cada seccion de ejercicio tiene su instruccion
 
 ## Para facilidad de uso todas las consultas estan agregadas en la siguiente coleccion de postman
 
-[![Run in Postman](https://www.getpostman.com/collections/1d3d77dfaeffe7997c4b)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.getpostman.com/collections/1d3d77dfaeffe7997c4b)
 
 
 # Ejercicio 1: Docker
