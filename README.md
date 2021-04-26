@@ -84,11 +84,19 @@ Desarrolla una función o script que consuma la API Envíame para la creación d
 Crea un script en tu lenguaje favorito que obtenga el primer número de Fibonacci que tiene más de 1000 divisores.
 
 El script esta hecho en python, para correrlo se preparo un contenedor el cual se puede acceder en el directorio 
+
 `/enviame-test/src/ejercicio5py` 
+
 Corriendo el comando: 
+
 `docker build -t script_python .`
+
 Luego de que este montada la imagen correr el comando:
+
 `docker run script_python`
+
+el resultado demora un par de segundos en aparecer, el output es las iteraciones de la serie de fibonacci con una conclucion de cual es el fibonacci que satisface el requerimiento del ejercicio
+
 * Notas: calculo el numero n de la serie fibonacci usando  recursividad con tecnicas de optimizacion de memorizacion
 
 # Ejercicio 6: Análisis + Desarrollo Aplicado a Negocio
@@ -97,6 +105,7 @@ Desarrolla una función o procedimiento que estime el tiempo de entrega de la en
 
 # Ejercicio 7: SQL
 Actualizar los sueldos de los empleados que ganen $5000 o menos, de acuerdo al reajuste anual del continente al que pertenecen.
+
 En el directorio siguiente esta el archivo 'sql-ejercicio7.sql' donde se encuentra el query que cumple con el requerimiento
 
 `enviame-test/src/mysql_files/sql-ejercicio7.sql`
@@ -108,9 +117,9 @@ El Query en cuestion es
 # Complemento de bases de datos
 En el directorio siguiente se encuentran los archivos 
 
-* 'tabla-ejercicio2.sql'
-* 'tabla-ejercicio4.sql'
-* 'tabla-ejercicio7.sql' 
+* `tabla-ejercicio2.sql`
+* `tabla-ejercicio4.sql`
+* `tabla-ejercicio7.sql` 
 
-cada uno respectivamente tiene los querys para crear las tablas usadas para todo el test.
+Cada uno respectivamente tiene los querys para crear y/o popular las tablas usadas para todo el test. Estos archivos son complementarios pero no es necesario correrlos ya que ya estan en el volumen de la base de datos del ambiente dockerizado.
 
