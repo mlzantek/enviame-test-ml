@@ -34,7 +34,7 @@ Public link
 Instruccion general: 
 
 * Bajar el repositorio a una carpeta de su eleccion
-* Desde el directorio raiz de este repositorio, o donde esta el archivo docker-compose-yml correr comando de consola "docker-compose up"
+* Desde el directorio raiz de este repositorio, o donde esta el archivo docker-compose.yml correr comando de consola "docker-compose up"
 
 # Ejercicio 2: API REST + CRUD
 instruccion: Correr desde postman con los parametros mostrados
