@@ -3,12 +3,12 @@
 
 ## Imagenes para el ambiente en contenedores docker
 
-`mysql:8.0.1
-phpmyadmin:5.1.0-apache
-php:8.0.3-apache`
+* mysql:8.0.1
+* phpmyadmin:5.1.0-apache
+* php:8.0.3-apache
 
-# Dependencias php
-`fakerphp/faker:latest`
+# Dependencias php: para traer las dependencaias de cero basta con usar composer ejecutando el comando `composer require fakerphp/faker` 
+* fakerphp/faker:latest*
 
 # Instrucciones generales:
 ## Cada seccion de ejercicio tiene su instruccion 
