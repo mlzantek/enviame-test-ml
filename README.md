@@ -23,6 +23,7 @@ instruccion: Correr desde postman con los parametros mostrados
 * 'GET - http://localhost:8089/api/read.php' Trae todos las empresas
 * 'GET - localhost:8089/api/single_read.php/?id=#' Trae una sola empresa donde # es el id unico de la empresa
 * 'POST - http://localhost:8089/api/create.php' Crea una empresa
+
 Json para consulta
 
 `'{
@@ -33,6 +34,7 @@ Json para consulta
 }'`
 
 * 'POST - http://localhost:8089/api/update.php' Actualiza una empresa
+
 Json para consulta
 
 `'{
@@ -44,6 +46,7 @@ Json para consulta
 }'`
 
 * 'POST - localhost:8089/api/delete.php' Borra una empresa
+
 Json para consulta
 
 `'{
