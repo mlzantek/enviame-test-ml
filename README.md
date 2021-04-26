@@ -24,14 +24,17 @@ instruccion: Correr desde postman con los parametros mostrados
 * 'GET - localhost:8089/api/single_read.php/?id=#' Trae una sola empresa donde # es el id unico de la empresa
 * 'POST - http://localhost:8089/api/create.php' Crea una empresa
 Json para consulta
+
 `'{
 	"nombre":"EvilCorp",
 	"email":"correo@gmail.com",
 	"ceo":"Policarpo",
 	"fecha_creacion":"2012-06-01 02:12:30"
 }'`
+
 * 'POST - http://localhost:8089/api/update.php' Actualiza una empresa
 Json para consulta
+
 `'{
 	"id":"26",
 	"nombre":"ECorp",
@@ -39,8 +42,10 @@ Json para consulta
 	"ceo":"Policarpo",
 	"fecha_creacion":"2012-06-02 02:12:30"
 }'`
+
 * 'POST - localhost:8089/api/delete.php' Borra una empresa
 Json para consulta
+
 `'{
 	"id":"26"
 }'`
