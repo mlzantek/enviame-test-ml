@@ -7,9 +7,14 @@
 * phpmyadmin:5.1.0-apache
 * php:8.0.3-apache
 
-# Dependencias php: para traer las dependencaias de cero basta con usar composer ejecutando el comando 
-`composer require fakerphp/faker` 
-* fakerphp/faker:latest*
+# Dependencias y librerias php: las dependencias estan ya incluidas en el volumen del ambiente dockerizado del proyecto, como aclaratoria las dependencias vienen ya en la imagen de php y las librerias se incorporaron con uso de composer ejecutando el comando
+
+`composer require fakerphp/faker`
+
+* fakerphp/faker:latest
+* mysqli
+* pdo
+* pdo_mysql
 
 # Instrucciones generales:
 Cada seccion de ejercicio tiene su instruccion 
