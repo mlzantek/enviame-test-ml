@@ -1,0 +1,7 @@
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\bin\Debug\Ejercicio5.exe.config
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\bin\Debug\Ejercicio5.exe
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\bin\Debug\Ejercicio5.pdb
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\obj\Debug\Ejercicio5.csprojAssemblyReference.cache
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\obj\Debug\Ejercicio5.csproj.CoreCompileInputs.cache
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\obj\Debug\Ejercicio5.exe
+D:\wamp64\www\mockups\enviame-test\src\ejercicio5\obj\Debug\Ejercicio5.pdb

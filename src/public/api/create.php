@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
 	header("Access-Control-Allow-Methods: POST");
@@ -21,8 +22,12 @@
 	$item->fecha_creacion = date('Y-m-d H:i:s');
 	
 	if($item->createEmpresa()){
-		echo 'Empresa creada con exito!';
+		echo json_encode(
+			array("message" => "Empresa creada con exito!")
+		);
 	} else{
-		echo 'Error: La empresa no pudo ser creada.';
+		echo json_encode(
+			array("message" => "Error: La empresa no pudo ser creada.")
+		);
 	}
 ?>

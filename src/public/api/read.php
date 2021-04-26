@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
 	
@@ -18,8 +19,8 @@
 	if($itemCount > 0){
 		
 		$empresaArr = array();
-		$empresaArr["body"] = array();
-		$empresaArr["itemCount"] = $itemCount;
+		$empresaArr["Empresas"] = array();
+		$empresaArr["Cantidad"] = $itemCount;
 
 		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
 			extract($row);
@@ -31,7 +32,7 @@
 				"fecha_creacion" => $fecha_creacion
 			);
 
-			array_push($empresaArr["body"], $e);
+			array_push($empresaArr["Empresas"], $e);
 		}
 		echo json_encode($empresaArr);
 	}

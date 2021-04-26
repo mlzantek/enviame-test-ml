@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
 	header("Access-Control-Allow-Methods: POST");
@@ -24,8 +25,12 @@
 	$item->fecha_creacion = date('Y-m-d H:i:s');
 	
 	if($item->updateEmpresa()){
-		echo json_encode("Empresa data updated.");
+		echo json_encode(
+			array("message" => "Datos de Empresa actualizados")
+		);
 	} else{
-		echo json_encode("Data could not be updated");
+		echo json_encode(
+			array("message" => "Error: No se pudo realizar el actualizado de datos")
+		);
 	}
 ?>

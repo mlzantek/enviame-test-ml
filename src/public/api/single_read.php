@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
 	header("Access-Control-Allow-Methods: POST");
@@ -33,6 +34,8 @@
 	  
 	else{
 		http_response_code(404);
-		echo json_encode("Empresa no encontrada.");
+		echo json_encode(
+			array("message" => "Empresa no encontrada")
+		);
 	}
 ?>

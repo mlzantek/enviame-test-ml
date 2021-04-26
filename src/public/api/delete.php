@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
 	header("Access-Control-Allow-Methods: POST");
@@ -18,8 +19,12 @@
 	$item->id = $data->id;
 	
 	if($item->deleteEmpresa()){
-		echo json_encode("Empresa eliminada con exito.");
+		echo json_encode(
+			array("message" => "Empresa eliminada con exito")
+		);
 	} else{
-		echo json_encode("Error: La empresa no pudo ser eliminada");
+		echo json_encode(
+			array("message" => "Error: La empresa no pudo ser eliminada")
+		);
 	}
 ?>

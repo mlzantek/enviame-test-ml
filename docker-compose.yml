@@ -8,7 +8,9 @@ services:
     volumes:
       - ./db_datadir:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_USER: enviame-test
+      MYSQL_PASSWORD: test123
+      MYSQL_ROOT_PASSWORD: test123
 
   phpmyadmin:
     image: phpmyadmin:5.1.0-apache
@@ -18,9 +20,9 @@ services:
     ports:
       - 8090:80
     environment:
-      PMA_HOST: db
-      PMA_USER: root
-      PMA_PASSWORD: example
+      MYSQL_USER: enviame-test
+      MYSQL_PASSWORD: test123
+      MYSQL_ROOT_PASSWORD: test123
 
   web:
     build: .
@@ -30,3 +32,5 @@ services:
       - "db"
     volumes:
       - ./src:/var/www
+    links:
+      - "db"

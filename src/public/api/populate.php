@@ -1,4 +1,5 @@
 <?php
+	error_reporting(E_ERROR | E_PARSE);
 	header("Access-Control-Allow-Origin: *");
 	header("Content-Type: application/json; charset=UTF-8");
 	header("Access-Control-Allow-Methods: POST");
@@ -7,7 +8,7 @@
 
 	include_once '../config/database.php';
 	include_once '../class/empresas.php';
-	require_once '../vendor/autoload.php';
+	require_once '../../vendor/autoload.php';
 
 	$database = new Database();
 	$db = $database->getConnection();
@@ -24,5 +25,7 @@
 		$item->fecha_creacion = date('Y-m-d H:i:s');
 		$item->createEmpresa();
 	}
-	echo 'Base de datos populada con 10 empresas!';
+	echo json_encode(
+		array("message" => "Base de datos populada con 10 empresas")
+	);
 ?>

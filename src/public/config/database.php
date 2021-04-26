@@ -1,9 +1,9 @@
 <?php 
 	class Database {
-		private $host = "127.0.0.1";
+		private $host = "db";
 		private $database_name = "enviame-test";
-		private $username = "root";
-		private $password = "enviame";
+		private $username = "enviame-test";
+		private $password = "test123";
 
 		public $conn;
 
